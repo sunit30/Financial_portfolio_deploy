@@ -20,10 +20,13 @@ class Modal extends React.Component {
     //   if(response.data["Note"]){
     //   console.log("There seems to be a issue with server")
     // }
-    let currentdate = Object.keys(this.state.alphav["Time Series (Daily)"])[0];
-    currprice = this.state.alphav["Time Series (Daily)"][currentdate][
-      "1. open"
-    ];
+    //let currentdate = Object.keys(this.state.alphav["Time Series (Daily)"])[0];
+    let currentdate;
+//     currprice = this.state.alphav["Time Series (Daily)"][currentdate][
+//       "1. open"
+//     ];
+       currprice = 1000;
+
     pl = (currprice - buyprice) * number;
     if (!date || !number || !buyprice) {
       alert("Please complete the form");
