@@ -45,7 +45,11 @@ class Modal extends React.Component {
     Axios.get(
       `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${this.props.buttonselected.symbol}&apikey=H2Z2UOQ1GRPMVJFA`
     ).then((response) => {
+      console.log("alphav");
+      console.log(response.data);
       this.setState({ alphav: response.data });
+      console.log("alphav");
+      console.log(response.data);
     });
   }
   render() {
