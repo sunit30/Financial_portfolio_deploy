@@ -5,6 +5,7 @@ import Modal from "./components/Modal";
 import Header from "./components/Header";
 import firebase from "./fire";
 import Axios from "axios";
+import 'firebase/database';
 
 class App extends React.Component {
   constructor(props) {
